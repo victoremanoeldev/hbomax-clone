@@ -1,0 +1,481 @@
+:root {
+  font-size: 62.5%;
+  --primary: #000000;
+  --secondary: #aaaaaa;
+  --white: #ffffff;
+  --border: #8b00ff;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b00ff transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8b00ff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  padding: 0 4rem;
+  max-width: 1880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 840px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.header .container {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+.header .items-left i,
+.header .items-right i {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.header .items-left i {
+  font-size: 2.5rem;
+}
+
+.header .items-right i {
+  font-size: 2.1rem;
+}
+
+.header .menu .menu-link,
+.header .navbar .nav-link {
+  color: var(--secondary);
+  transition: var(--transition);
+  font-weight: bold;
+}
+
+.header .menu .menu-link:hover,
+.header .menu .menu-link:hover i,
+.header .navbar .nav-link:hover,
+.header .navbar .nav-link:hover i,
+.header .items-left i:hover {
+  color: var(--white);
+}
+
+.header .items-right,
+.header .items-left {
+  max-width: 20rem;
+  width: 100%;
+}
+
+.header .items-left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header .items-left .navbar {
+  position: absolute;
+  left: -100rem;
+  top: 0rem;
+  opacity: 0;
+  transition: var(--transition);
+  height: 100vh;
+}
+
+.header .items-left .navbar.active {
+  padding: 4rem 6rem 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  width: 38rem;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 4;
+}
+
+@media (max-width: 496px) {
+  .header .items-left .navbar.active {
+    padding: 4rem 3rem 4rem 3rem;
+    width: 100%;
+  }
+}
+.header .items-left .navbar.active .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.header .items-left .navbar.active .nav-menu .nav-link {
+  font-size: 2.3rem;
+  font-weight: 300;
+  padding: 1.7rem 0rem;
+}
+
+.header .items-left .navbar.active .nav-menu .series-link,
+.header .items-left .navbar.active .nav-menu .movies-link {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header .items-left .navbar.active .nav-menu .series-link,
+  .header .items-left .navbar.active .nav-menu .movies-link {
+    display: block;
+  }
+
+  .header .items-left .series-and-movies {
+    display: none;
+  }
+}
+
+.header .hbo-logo {
+  max-width: 17rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 594px) {
+  .header .hbo-logo {
+    max-width: 14rem;
+    padding: 0 2rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.header .items-right .menu {
+  justify-content: flex-end;
+}
+
+.details .banner {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../assets/images/section-details/dexter-banner.webp);
+  position: relative;
+}
+
+.details .banner::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.details .name-actions-and-additional-info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  top: -3vh;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 814px) {
+  .details .name-actions-and-additional-info {
+    top: -5vh;
+  }
+}
+
+.details .name-actions-and-additional-info .additional-info {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.details .name-actions-and-additional-info .additional-info span {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+.details .name-actions-and-additional-info .additional-info .a18 {
+  font-size: 1.1rem;
+  color: var(--white);
+  background: #000000;
+  border: 1px solid var(--white);
+  font-weight: 600;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.details .name-actions-and-additional-info .actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.details .name-actions-and-additional-info .actions .play,
+.details .name-actions-and-additional-info .actions .add-to-list {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.details .name-actions-and-additional-info .actions .play i,
+.details .name-actions-and-additional-info .actions .add-to-list i {
+  padding: 0rem 0rem 0rem 0.3rem;
+  color: var(--white);
+}
+
+.details .name-actions-and-additional-info .actions .play {
+  border: 2px solid var(--white);
+  transition: var(--transition);
+}
+
+.details .name-actions-and-additional-info .actions .play:hover {
+  border: 2px solid var(--border);
+  transform: scale(1.1);
+}
+
+.details .name-actions-and-additional-info .actions .play i {
+  font-size: 2.1rem;
+  padding: 0rem 0rem 0rem 0.3rem;
+  color: var(--white);
+}
+
+.details .name-actions-and-additional-info .actions .add-to-list {
+  transition: var(--transition);
+}
+
+.details .name-actions-and-additional-info .actions .add-to-list:hover {
+  background: #333333;
+}
+
+.details .name-actions-and-additional-info .actions .add-to-list i {
+  font-size: 2.7rem;
+}
+
+.details .name-actions-and-additional-info .description p {
+  color: var(--secondary);
+  font-size: 1.8rem;
+  max-width: 70rem;
+  line-height: 2.8rem;
+  padding: 0rem 2rem 0rem 0rem;
+}
+
+@media (max-width: 724px) {
+  .details .name-actions-and-additional-info .description p {
+    font-size: 1.6rem;
+  }
+}
+
+.seasons-and-episodes {
+  padding: 2rem 0rem 4rem;
+  position: relative;
+}
+
+.seasons-and-episodes .select-season {
+  display: grid;
+  gap: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.seasons-and-episodes .select-season h2 {
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.seasons-and-episodes .select-season .list .dropdown-content {
+  display: flex;
+  gap: 5rem;
+}
+
+.seasons-and-episodes .select-season .list span {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  color: var(--secondary);
+  font-weight: 200;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.seasons-and-episodes .select-season .list span.active {
+  border-bottom: 3px solid var(--border);
+}
+@media (max-width: 640px) {
+  .seasons-and-episodes .select-season .list .dropdown-content {
+    gap: 2rem;
+  }
+
+  .seasons-and-episodes .select-season .list span {
+    font-size: 2rem;
+  }
+}
+
+.seasons-and-episodes .select-season .list span:hover {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.seasons-and-episodes .season {
+  display: none;
+}
+
+.seasons-and-episodes .season.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+}
+
+.seasons-and-episodes .season.active img {
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.seasons-and-episodes .season.active .episode:hover img {
+  border: 2px solid var(--border);
+}
+
+.seasons-and-episodes .season.active .episode {
+  position: relative;
+  cursor: pointer;
+}
+
+.seasons-and-episodes .season.active .episode .icons {
+  display: none;
+}
+
+.seasons-and-episodes .season.active .episode:hover .icons {
+  opacity: 1;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 6.5rem;
+  display: flex;
+  gap: 1rem;
+  left: 0;
+  justify-content: flex-end;
+  padding: 1.4rem;
+}
+
+.seasons-and-episodes .season.active .episode .icons .play,
+.seasons-and-episodes .season.active .episode .icons .plus {
+  width: 4rem;
+  height: 4rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding-left: 0.2rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.seasons-and-episodes .season.active .episode .icons i {
+  font-size: 2rem;
+}
+
+.seasons-and-episodes .season.active .episode .icons .play:hover,
+.seasons-and-episodes .season.active .episode .icons .plus:hover {
+  transform: scale(1.1);
+}
+
+.seasons-and-episodes .season.active .episode h3 {
+  color: var(--white);
+  font-weight: 600;
+  padding-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.seasons-and-episodes .season.active .episode .more-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.seasons-and-episodes .season.active .episode .more-info span {
+  font-weight: 100;
+  margin-top: 0.9rem;
+  color: var(--white);
+}
+
+.seasons-and-episodes .season.active .episode .more-info .a18 {
+  background: #000000;
+  border: 1px solid var(--white);
+  font-weight: 600;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 1890px) {
+  .seasons-and-episodes .season.active {
+    grid-template-columns: repeat(auto-fit, minmax(24.5rem, 1fr));
+  }
+}
+
+@media (max-width: 1740px) {
+  .seasons-and-episodes .season.active {
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  }
+}
+
+@media (max-width: 710px) {
+  .seasons-and-episodes .season.active {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  }
+}
+
+@media (max-width: 364px) {
+  .seasons-and-episodes .season.active {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

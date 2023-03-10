@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- JS -->
+    <script defer src="./src/js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="items-left">
+
+                <i class="open-menu fa-solid fa-regular fa-bars"></i>
+
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <i class="close-menu fas fa-regular fa-xmark"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Início </a>
+                        </li>
+                        <li class="menu-item movies-link">
+                            <a href="" class="nav-link"> Filmes </a>
+                        </li>
+                        <li class="menu-item series-link">
+                            <a href="" class="nav-link"> Séries </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Originais </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Últimos Dias </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Em breve </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Em Alta </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Gêneros </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <ul class="menu series-and-movies">
+                    <li class="menu-item">
+                        <a href="" class="menu-link"> <strong>Filmes</strong> </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-link"> <strong>Séries</strong> </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#">
+                <img class="hbo-logo" src="./assets/images/section-header/hbo-max-logo.png" alt="" />
+            </a>
+
+            <div class="items-right">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fas fa-regular fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="details">
+        <div class="banner">
+        </div>
+        <div class="container">
+            <div class="name-actions-and-additional-info">
+                <div class="name">
+                    <img src="./assets/images/section-details/dexter-logo.png" alt="">
+                </div>
+                <div class="additional-info">
+                    <span class="year"> 2013 </span>
+                    <span class="quality"> FHD </span>
+                    <span class="rate"> 9.8/10 </span>
+                    <span class="a18"> 18 </span>
+                </div>
+                <div class="actions">
+                    <div class="play">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="add-to-list">
+                        <i class="fa-regular fa-plus"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <p> Dexter Morgan tem uma vida dupla. Quando não está ajudando a Divisão de Homicídios de Miami, ele
+                        passa seu tempo caçando e matando criminosos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="seasons-and-episodes">
+        <div class="container">
+
+            <div class="select-season">
+                <h2> Temporadas </h2>
+                <div class="list">
+                    <div class="dropdown-content">
+                        <span class="season-button" data-target="season1">1</span>
+                        <span class="season-button" data-target="season2">2</span>
+                        <span class="season-button" data-target="season3">3</span>
+                        <span class="season-button" data-target="season4">4</span>
+                        <span class="season-button" data-target="season5">5</span>
+                        <span class="season-button" data-target="season6">6</span>
+                        <span class="season-button" data-target="season7">7</span>
+                        <span class="season-button" data-target="season8">8</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="season" id="season1">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Piloto </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Crocodilo </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Abuso </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Uma mão para o rapaz </h3>
+                    <div class="more-info">
+                        <span> 58 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. Amor estilo americano </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Retorno ao remetente </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Círculo de amigos </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Terapia </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Papai sabe o que é melhor </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Enxergando vermelho </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Verdade seja dita </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-1/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Nascer livre </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season2">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Está vivo </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Prendendo a respiração </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Uma mentira inconveniente </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Invisível </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. O defensor negro </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Dex, mentiras e videotape </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Naquela noite, uma floresta </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Amanheceu </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Resistir é inútil </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Quem vai ficar com Harry? </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. À frente, vire à esquerda </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-2/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Invasão britânica </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season3">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Pai nosso </h3>
+                    <div class="more-info">
+                        <span> 58 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Procurando Freebo </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. O leão dorme novamente </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Tudo em família </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. Viagem a Bimini </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. É possível </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Fácil demais </h3>
+                    <div class="more-info">
+                        <span> 58 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. O estrago que posso fazer </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Sobre a última noite </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Siga seu próprio caminho </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Eu tive um sonho </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-3/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Você aceita? </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season4">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Vivendo um sonho </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. O que será dos restos? </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Cegado pela luz </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Dex sai de férias </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. Perseguidor implacável </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Se eu tivesse um martelo </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Maré mansa </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Problemas na estrada </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Homem faminto </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Garotos perdidos </h3>
+                    <div class="more-info">
+                        <span> 57 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Olá, Dexter Morgan </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-4/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Fuga </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season5">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Foi mal </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Olá, bandido </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Praticamente perfeito </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. A Bela e a Fera </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. O primeiro sangue </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Tudo se iluminou </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Envolvamos </h3>
+                    <div class="more-info">
+                        <span> 48 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Pegue </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Adolescência desperdiçada </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. No começo </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Sob vigilância </h3>
+                    <div class="more-info">
+                        <span> 47 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-5/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. O grande </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season6">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Esses tipos de coisas </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Era uma vez </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Smokey e Bandit </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Cavalo de cor diferente </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. O anjo da morte </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Apenas esqueça </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Nebraska </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>P
+                    <ecado> 8. Pecado por omissão </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Pegar o Gellar </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Coelho ricochete </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Fale com a mão </h3>
+                    <div class="more-info">
+                        <span> 48 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-6/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. É assim que o tudo acaba </h3>
+                    <div class="more-info">
+                        <span> 51 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season7">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Você é...? </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>Sol e sorveteNo começo </h3>
+                    <div class="more-info">
+                        <span> 58 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. Quebre o sistema </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Corra </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. Mergulho fundo </h3>
+                    <div class="more-info">
+                        <span> 57 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Faça a coisa errada </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Química </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Argentina </h3>
+                    <div class="more-info">
+                        <span> 58 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Com pressa </h3>
+                    <div class="more-info">
+                        <span> 57 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. O passageiro...sei lá o que </h3>
+                    <div class="more-info">
+                        <span> 54 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Você vê o que eu vejo? </h3>
+                    <div class="more-info">
+                        <span> 57 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-7/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Surpresa, motherf**ker </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="season" id="season8">
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-1.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 1. Um lindo dia </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-2.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 2. Males que vem para o bem </h3>
+                    <div class="more-info">
+                        <span> 57 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-3.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 3. O que irrita o Dexter? </h3>
+                    <div class="more-info">
+                        <span> 49 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-4.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 4. Tecido de cicatrização </h3>
+                    <div class="more-info">
+                        <span> 50 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-5.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 5. Este porquinho </h3>
+                    <div class="more-info">
+                        <span> 48 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-6.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 6. Uma pequena reflexão </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-7.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 7. Vestindo-se de acordo </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-8.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 8. Já chegamos lá? </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-9.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 9. Faça sua própria música </h3>
+                    <div class="more-info">
+                        <span> 55 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-10.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 10. Adeus Miami </h3>
+                    <div class="more-info">
+                        <span> 53 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-11.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 11. Macaco na caixa </h3>
+                    <div class="more-info">
+                        <span> 52 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+                <div class="episode">
+                    <img src="./assets/images/section-seasons/season-8/episode-12.jpg" alt="">
+                    <div class="icons">
+                        <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <h3> 12. Lembra-se dos monstros? </h3>
+                    <div class="more-info">
+                        <span> 56 MIN </span>
+                        <span class="a18"> 18 </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
